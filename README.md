@@ -8,6 +8,10 @@ The functionality was inspired by the `GetSecs` and `WaitSecs('UntilTime')` func
 
 :warning: `waitUntilTime` is a **blocking** timer. This means MATLAB will be unresponsive until the specified time is reached!
 
+## Installation
+
+The timer functions can be installed directly from the MATLAB Add-On Explorer. Select Add-Ons and search for Blocking Timer, then select Add, Add to MATLAB.
+
 ## Usage
 
 The functions can be used to perform a task at a specified interval. To avoid drift between successive events, it is recommended to reference the wait times against a static start time.
