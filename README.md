@@ -1,5 +1,7 @@
 # Matlab Blocking Timer
 
+[![View High-performance blocking timer on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/125290-high-performance-blocking-timer)
+
 ## Overview
 
 Implements two functions, `getTime` and `waitUntilTime` which can be used for performance critical timing operations in MATLAB running under Windows. These provide high-performance timing with jitter / drift on the order of ~1 ms.
