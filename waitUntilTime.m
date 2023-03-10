@@ -1,13 +1,14 @@
 %WAITUNTILTIME Block execution until the specified time has been reached.
 %   WAITUNTILTIME(TARGETTIME) blocks execution until the current time is
-%   greater than or equal to TARGETTIME, where TARGETTIME is the time in
-%   seconds since the epoch (January 1, 1970 00:00:00 UTC).
+%   greater than or equal to TARGETTIME. If TARGETTIME is less than the
+%   current time, the function returns an error.
 %
-%   The function uses a high-precision multimedia timer to achieve an
-%   accuracy better than 10 microseconds.
+%   The function uses a high-precision multimedia timer to achieve
+%   real-world jitter / drift on the order of 1 ms.
 %
-%   If TARGETTIME is less than the current time, the function returns an
-%   error.
+%   Note, the time reference for this function is specific to the system on
+%   which the code is running, and is not synchronized with any external
+%   time standard such as UTC or GPS time.
 %
 %   Example:
 %       % Block execution for 1 second

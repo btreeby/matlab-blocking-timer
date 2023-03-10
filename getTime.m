@@ -1,7 +1,9 @@
 %GETTIME Return the current time in seconds since the epoch.
-%   T = GETTIME() returns the current time in seconds since the epoch
-%   (January 1, 1970 00:00:00 UTC). The resolution of the timer is better
-%   than 10 microseconds.
+%   T = GETTIME() returns the current time in seconds.
+%
+%   Note, the time reference for this function is specific to the system on
+%   which the code is running, and is not synchronized with any external
+%   time standard such as UTC or GPS time.
 %
 %   Example:
 %       % Get the current time
