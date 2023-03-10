@@ -4,7 +4,7 @@
 
 ## Overview
 
-Implements two functions, `getTime` and `waitUntilTime` which can be used for performance critical timing operations in MATLAB running under Windows. These provide high-performance timing with jitter / drift on the order of ~1 ms. The functionality was inspired by the `GetSecs` and `WaitSecs('UntilTime')` functions in the [Psychtoolbox](http://psychtoolbox.org/) which offer similar performance, but require the `Psychtoolbox`.
+The Matlab Blocking Timer provides two functions, `getTime` and `waitUntilTime` which can be used for performance critical timing operations in MATLAB running under Windows. These provide high-performance timing with jitter / drift on the order of ~1 ms. The functionality was inspired by the `GetSecs` and `WaitSecs('UntilTime')` functions in the [Psychtoolbox](http://psychtoolbox.org/) which offer similar performance, but require the `Psychtoolbox`.
 
 :warning: `waitUntilTime` is a **blocking** timer. This means MATLAB will be unresponsive until the specified time is reached!
 
