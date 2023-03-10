@@ -6,8 +6,6 @@
 
 The **Matlab Blocking Timer** provides two functions, `getTime` and `waitUntilTime` which can be used for performance critical timing operations in MATLAB running under Windows. These provide high-performance timing with jitter / drift on the order of ~1 ms. The functionality was inspired by the `GetSecs` and `WaitSecs('UntilTime')` functions in the [Psychtoolbox](http://psychtoolbox.org/) which offer similar performance, but require the `Psychtoolbox`.
 
-:warning: `waitUntilTime` is a **blocking** timer. This means MATLAB will be unresponsive until the specified time is reached!
-
 ## Installation
 
 The timer functions can be installed directly from the MATLAB Add-On Explorer. Select Add-Ons and search for Blocking Timer, then select Add, Add to MATLAB.
@@ -42,6 +40,8 @@ startTime = getTime;
 
 disp(['Elapsed time is ' num2str(getTime - startTime) ' seconds.']);
 ```
+
+:warning: `waitUntilTime` is a **blocking** timer. This means MATLAB will be unresponsive until the specified time is reached!
 
 ## Performance
 
