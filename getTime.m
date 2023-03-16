@@ -1,4 +1,4 @@
-%GETTIME Return the current time in seconds since the epoch.
+%GETTIME Return the current time in seconds.
 %   T = GETTIME() returns the current time in seconds.
 %
 %   Note, the time reference for this function is specific to the system on
