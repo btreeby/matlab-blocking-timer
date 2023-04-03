@@ -24,7 +24,7 @@ startTime = getTime();
 for ind = 1:numIterations
 
     % wait until specified time
-    waitUntilTime(startTime + ind * waitTime);
+    waitUntilTime(startTime + ind * repetitionInterval);
 
     % do something...
 
